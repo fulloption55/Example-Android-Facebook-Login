@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/facebook1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.theerut.dodo.MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/logoIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fac_logo"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/langText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="English"
+            android:textColor="@color/facebook2"
+            android:layout_toLeftOf="@+id/dotImage"/>
+
+        <ImageView
+            android:id="@+id/dotImage"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/logoIcon"
+            android:layout_centerHorizontal="true"
+            android:src="@android:drawable/presence_invisible"
+            />
+
+        <TextView
+            android:id="@+id/langSelectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/dotImage"
+            android:layout_marginTop="10dp"
+            android:text="Change"
+            android:textColor="@color/facebook4" />
+    </RelativeLayout>
+    <!--<ScrollView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <LinearLayout
+        android:id="@+id/editLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:gravity="center_horizontal"
+        android:weightSum="10"
+        >
+
+        <EditText
+            android:id="@+id/userText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Email or Phone"
+            android:textColor="@color/facebook4"
+            android:textColorHighlight="@color/facebook4"
+            android:textColorHint="@color/facebook3"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/passText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/facebook4"
+            android:textColorHint="@color/facebook3"
+            android:textCursorDrawable="@color/facebook4"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/facebook5"
+            android:text="LOG IN"
+            android:textColor="@color/facebook3"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Wrong User or Password"
+            android:textColor="@color/red"
+            android:visibility="invisible"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/forgotPassText"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up for Pornhub"
+            android:textColor="@color/facebook4" />
+
+        <TextView
+            android:id="@+id/forgotPassText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/facebook4" />
+
+        <ImageView
+            android:id="@+id/question_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_help" />
+    </RelativeLayout>
+
+</LinearLayout>
